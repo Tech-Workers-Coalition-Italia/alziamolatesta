@@ -72,7 +72,7 @@ flex: 0 1 auto;}
 flex: 0 1 auto;}
 
 /* Mobile */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
     .negpoints {width: 100%; flex: 0 1 auto;}
     .negimage {flex: 0 1 auto; width: 100%;}
     .pospoints {width: 100%;flex: 0 1 auto;}
