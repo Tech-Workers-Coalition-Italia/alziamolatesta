@@ -1,8 +1,7 @@
-body {margin: 0 auto;color: white;text-align: center;overscroll-behavior: none;
-  }
+body {margin: 0 auto;color: white;text-align: center;/* width: 100vw; */
+/* height: 100vh; */}
 .redbox {background-color: red;display: flex;flex-direction: row;flex-wrap: wrap;height: 100%;justify-content: center;
-  align-items: center;
-  }
+  align-items: center;}
 .negpoints {width: 50%;flex: 0 1 auto;}
 .negimage {flex: 0 1 auto;width: 50%;}
 .negpoints h2 {margin-left: 6%;}
@@ -26,5 +25,12 @@ width: 50%;}
 
 body > .mainwrapper {width: 100vw;
 height: 100vh;
-overflow-y: scroll;
 -webkit-overflow-scrolling: touch;}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    0;
+}
+
+
