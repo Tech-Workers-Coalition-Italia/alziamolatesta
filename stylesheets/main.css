@@ -1,8 +1,8 @@
 body {margin: 0 auto;color: white;text-align: center;width: 100vw;
-  height: 100vh;font-family: Arial;position:absolute}
+height: 100vh;font-family: Arial;position: absolute;}
 .redbox {background-color: #D41E0F;display: flex;flex-direction: row;flex-wrap: wrap;height: 100vh;justify-content: center;
-  align-items: center;width: 100vw;}
-.negpoints {width: 50vw;flex: 0 1 auto;}
+  width: 100vw;align-items: center;}
+.negpoints {width: 50vw;flex: 0 1 auto;align-items: center;}
 .negimage {flex: 0 1 auto;width: 50vw;}
 .negpoints h2 {margin: 0 auto;}
 .bluebox {background-color: #038EE1;
@@ -32,6 +32,14 @@ footer {
     bottom: 0;background-color: #038EE1;
     0;
 }
+
+.socialprivacy {display: flex;flex-direction: row-reverse;
+flex-wrap: wrap;height: 10vh;}
+.social {width: 25vw;
+flex: 0 1 auto;}
+.privacy {width: 25vw;
+flex: 0 1 auto;}
+
 
 
 
