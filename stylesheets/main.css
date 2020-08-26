@@ -3,6 +3,8 @@ height: 100vh;font-family: Arial;position: absolute; -webkit-overflow-scrolling:
 
 /*Translate button*/
 .itenbutton {position: absolute;right: 15%;margin-top: 5vh;font-size: 40px;}
+.itenbutton a {color: white;}
+.itenbutton a:hover {color: rgb(217, 217, 217);}
 
 /*Redbox*/
 .redbox {background-color: #D41E0F;display: flex;flex-direction: row;flex-wrap: wrap;height: 94vh;justify-content: center;
