@@ -11,7 +11,7 @@ flex-wrap: wrap;}
 
 /*Redbox*/
 .redbox {background-color: #D41E0F;display: flex;flex-direction: row;flex-wrap: wrap;justify-content: center;
-  width: 100vw;align-items: center;font-size: 30px;
+  width: 100%;align-items: center;font-size: 30px;
 flex: 0 1 auto;}
 .negpointsit {width: 50vw;flex: 0 1 auto;display: block;}
 .negpointsen {width: 50vw;
