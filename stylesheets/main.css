@@ -1,36 +1,40 @@
 body {margin: 0 auto;color: white;text-align: center;width: 100vw;
-height: 100vh;font-family: Arial;position: absolute;}
+height: 100vh;font-family: Arial;position: absolute; -webkit-overflow-scrolling: touch}
+
+/*Translate button*/
+.itenbutton {position: absolute;right: 25%;margin-top: 5vh;}
+
+/*Redbox*/
 .redbox {background-color: #D41E0F;display: flex;flex-direction: row;flex-wrap: wrap;height: 100vh;justify-content: center;
   width: 100vw;align-items: center;}
-.negpoints {width: 50vw;flex: 0 1 auto;align-items: center;}
+.negpointsit {width: 50vw;flex: 0 1 auto;align-items: center;display: block;}
+.negpointsen {width: 50vw;
+flex: 0 1 auto;
+align-items: center;
+display: none;}
 .negimage {flex: 0 1 auto;width: 50vw;}
-.negpoints h2 {margin: 0 auto;}
+
+/*Bluebox*/
 .bluebox {background-color: #038EE1;
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;height: 100vh;justify-content: center;
   align-items: center;width: 100vw;}
-.pospoints {width: 50%;
-flex: 0 1 auto;}
+.pospointsit {width: 50vw;
+flex: 0 1 auto;
+align-items: center;
+display: block;}
+.pospointsen {width: 50vw;
+flex: 0 1 auto;
+align-items: center;
+display: none;}
 .posimage {flex: 0 1 auto;
 width: 50vw;}
 
-/* Mobile */
-@media screen and (max-width: 1000px) {
-    .negpoints {width: 100%; flex: 0 1 auto;}
-    .negimage {flex: 0 1 auto; width: 100%;}
-    .pospoints {width: 100%;flex: 0 1 auto;}
-    .posimage {flex: 0 1 auto; width: 100%;}
-}
-
-body > .mainwrapper {/* width: 100vw; */
-/* height: 100vh; */
--webkit-overflow-scrolling: touch;}
-
+/*Footer*/
 footer {
     position: relative;
     bottom: 0;background-color: #038EE1;
-    0;
 }
 
 .socialprivacy {display: flex;flex-direction: row-reverse;
@@ -40,6 +44,20 @@ flex: 0 1 auto;}
 .privacy {width: 25vw;
 flex: 0 1 auto;}
 
+/* Mobile */
+@media screen and (max-width: 1000px) {
+    .negpoints {width: 100%; flex: 0 1 auto;}
+    .negimage {flex: 0 1 auto; width: 100%;}
+    .pospoints {width: 100%;flex: 0 1 auto;}
+    .posimage {flex: 0 1 auto; width: 100%;}
+}
+
+/*Translation IT/EN*/
+
+#it:target .negpointsit,#it:target .pospointsit {display: block;}
+#it:target .negpointsen,#it:target .pospointsen {display: none;}
+#en:target .negpointsit,#en:target .pospointsit {display: none;}
+#en:target .negpointsen,#en:target .pospointsen {display: block;}
 
 
 
