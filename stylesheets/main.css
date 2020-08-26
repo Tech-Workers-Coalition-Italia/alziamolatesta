@@ -7,19 +7,26 @@ a:hover {color: rgb(217, 217, 217);}
 flex-direction: row;
 flex-wrap: wrap;}
 
-/*Translate button*/
-.itenbutton {position: absolute;right: 15%;margin-top: 5vh;font-size: 40px;}
-
 /*Redbox*/
 .redbox {background-color: #D41E0F;display: flex;flex-direction: row;flex-wrap: wrap;justify-content: center;
   width: 100vw;align-items: center;font-size: 30px;
-flex: 0 1 auto;}
+flex: 0 1 auto;padding: 5% 0 10% 0;}
+.itenbutton {font-size: 40px;width: 100vw;
+flex: 0 1 auto;
+display: block;text-align: right;margin-right: 10%;}
+.titleit {width: 100vw;
+flex: 0 1 auto;margin: 6% auto;font-size: 60px;display: block;}
+.titleen {width: 100vw;
+flex: 0 1 auto;
+margin: 6% auto;
+font-size: 60px;
+display: none;}
 .negpointsit {width: 50vw;flex: 0 1 auto;display: block;}
 .negpointsen {width: 50vw;
 flex: 0 1 auto;
 
 display: none;}
-.negimage {flex: 0 1 auto;width: 50vw;margin: 2em;}
+.negimage {flex: 0 1 auto;width: 50vw;margin: 2em auto;}
 
 /*Graybox*/
 
@@ -48,7 +55,7 @@ flex: 0 1 auto;
 
 display: none;}
 .posimage {flex: 0 1 auto;
-width: 50vw;margin: 2em;}
+width: 50vw;margin: 2em auto;}
 
 /*Footer*/
 footer {
@@ -74,11 +81,11 @@ flex: 0 1 auto;}
 
 /*Translation IT/EN*/
 
-#it:target .negpointsit,#it:target .pospointsit,#it:target .graybox p:nth-child(1) {display: block;}
-#it:target .negpointsen,#it:target .pospointsen,#it:target .graybox p:nth-child(2) {display: none;}
+#it:target .negpointsit,#it:target .pospointsit,#it:target .graybox p:nth-child(1),#it:target .titleit {display: block;}
+#it:target .negpointsen,#it:target .pospointsen,#it:target .graybox p:nth-child(2),#it:target .titleen {display: none;}
 #en:target .negpointsit,#en:target .pospointsit,
-#en:target .graybox p:nth-child(1) {display: none;}
-#en:target .negpointsen,#en:target .pospointsen,#en:target .graybox p:nth-child(2) {display: block;}
+#en:target .graybox p:nth-child(1),#en:target .titleit {display: none;}
+#en:target .negpointsen,#en:target .pospointsen,#en:target .graybox p:nth-child(2),#en:target .titleen {display: block;}
 
 
 
