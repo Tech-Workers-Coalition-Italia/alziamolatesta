@@ -2,17 +2,21 @@ body {margin: 0 auto;color: white;text-align: center;width: 100vw;
 height: 100vh;font-family: Arial;position: absolute; -webkit-overflow-scrolling: touch;padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);}
 a {color: white;}
 a:hover {color: rgb(217, 217, 217);}
+#en {display: flex;
+flex-direction: row;
+flex-wrap: wrap;}
 
 /*Translate button*/
 .itenbutton {position: absolute;right: 15%;margin-top: 5vh;font-size: 40px;}
 
 /*Redbox*/
 .redbox {background-color: #D41E0F;display: flex;flex-direction: row;flex-wrap: wrap;height: 94vh;justify-content: center;
-  width: 100vw;align-items: center;font-size: 30px;}
-.negpointsit {width: 50vw;flex: 0 1 auto;align-items: center;display: block;}
+  width: 100vw;align-items: center;font-size: 30px;
+flex: 0 1 auto;}
+.negpointsit {width: 50vw;flex: 0 1 auto;display: block;}
 .negpointsen {width: 50vw;
 flex: 0 1 auto;
-align-items: center;
+
 display: none;}
 .negimage {flex: 0 1 auto;width: 50vw;}
 
@@ -20,7 +24,8 @@ display: none;}
 
 .graybox {height: 6vh;background-color: gray;justify-content: center;
 width: 100vw;
-align-items: center;display: flex;font-size: 30px;}
+align-items: center;display: flex;font-size: 30px;
+flex: 0 1 auto;}
 .graybox p {margin: 0 auto;}
 p {}
 .graybox p:nth-child(1) {display: block;}
@@ -31,14 +36,15 @@ p {}
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;height: 100vh;justify-content: center;
-  align-items: center;width: 100vw;font-size: 30px;}
+  align-items: center;width: 100vw;font-size: 30px;
+flex: 0 1 auto;}
 .pospointsit {width: 50vw;
 flex: 0 1 auto;
-align-items: center;
+
 display: block;}
 .pospointsen {width: 50vw;
 flex: 0 1 auto;
-align-items: center;
+
 display: none;}
 .posimage {flex: 0 1 auto;
 width: 50vw;}
@@ -46,7 +52,8 @@ width: 50vw;}
 /*Footer*/
 footer {
     position: relative;
-    bottom: 0;background-color: #038EE1;
+    bottom: 0;background-color: #038EE1;width: 100vw;
+flex: 0 1 auto;
 }
 
 .socialprivacy {display: flex;flex-direction: row-reverse;
@@ -71,6 +78,7 @@ flex: 0 1 auto;}
 #en:target .negpointsit,#en:target .pospointsit,
 #en:target .graybox p:nth-child(1) {display: none;}
 #en:target .negpointsen,#en:target .pospointsen,#en:target .graybox p:nth-child(2) {display: block;}
+
 
 
 
