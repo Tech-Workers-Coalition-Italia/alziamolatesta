@@ -15,10 +15,10 @@ flex: 0 1 auto;padding: 5% 0;}
 flex: 0 1 auto;
 display: block;text-align: right;margin-right: 10%;}
 .titleit {width: 100vw;
-flex: 0 1 auto;margin: 6% auto;font-size: 60px;display: block;}
+flex: 0 1 auto;margin: 2% auto;font-size: 60px;display: block;}
 .titleen {width: 100vw;
 flex: 0 1 auto;
-margin: 6% auto;
+margin: 2% auto;
 font-size: 60px;
 display: none;}
 .negpointsit {width: 50vw;flex: 0 1 auto;display: block;}
