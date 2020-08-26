@@ -1,12 +1,12 @@
 body {margin: 0 auto;color: white;text-align: center;width: 100vw;
-height: 100vh;font-family: Arial;position: absolute; -webkit-overflow-scrolling: touch}
+height: 100vh;font-family: Arial;position: absolute; -webkit-overflow-scrolling: touch;padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);}
 
 /*Translate button*/
-.itenbutton {position: absolute;right: 25%;margin-top: 5vh;}
+.itenbutton {position: absolute;right: 15%;margin-top: 5vh;font-size: 40px;}
 
 /*Redbox*/
-.redbox {background-color: #D41E0F;display: flex;flex-direction: row;flex-wrap: wrap;height: 100vh;justify-content: center;
-  width: 100vw;align-items: center;}
+.redbox {background-color: #D41E0F;display: flex;flex-direction: row;flex-wrap: wrap;height: 94vh;justify-content: center;
+  width: 100vw;align-items: center;font-size: 30px;}
 .negpointsit {width: 50vw;flex: 0 1 auto;align-items: center;display: block;}
 .negpointsen {width: 50vw;
 flex: 0 1 auto;
@@ -14,12 +14,22 @@ align-items: center;
 display: none;}
 .negimage {flex: 0 1 auto;width: 50vw;}
 
+/*Graybox*/
+
+.graybox {height: 6vh;background-color: gray;justify-content: center;
+width: 100vw;
+align-items: center;display: flex;font-size: 30px;}
+.graybox p {margin: 0 auto;}
+p {}
+.graybox p:nth-child(1) {display: block;}
+.graybox p:nth-child(2) {display: none;}
+
 /*Bluebox*/
 .bluebox {background-color: #038EE1;
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;height: 100vh;justify-content: center;
-  align-items: center;width: 100vw;}
+  align-items: center;width: 100vw;font-size: 30px;}
 .pospointsit {width: 50vw;
 flex: 0 1 auto;
 align-items: center;
@@ -54,10 +64,12 @@ flex: 0 1 auto;}
 
 /*Translation IT/EN*/
 
-#it:target .negpointsit,#it:target .pospointsit {display: block;}
-#it:target .negpointsen,#it:target .pospointsen {display: none;}
-#en:target .negpointsit,#en:target .pospointsit {display: none;}
-#en:target .negpointsen,#en:target .pospointsen {display: block;}
+#it:target .negpointsit,#it:target .pospointsit,#it:target .graybox p:nth-child(1) {display: block;}
+#it:target .negpointsen,#it:target .pospointsen,#it:target .graybox p:nth-child(2) {display: none;}
+#en:target .negpointsit,#en:target .pospointsit,
+#en:target .graybox p:nth-child(1) {display: none;}
+#en:target .negpointsen,#en:target .pospointsen,#en:target .graybox p:nth-child(2) {display: block;}
+
 
 
 
