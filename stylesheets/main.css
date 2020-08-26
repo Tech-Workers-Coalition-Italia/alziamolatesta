@@ -21,3 +21,8 @@ width: 50%;}
     .pospoints {width: 100%;flex: 0 1 auto;}
     .posimage {flex: 0 1 auto; width: 100%;}
 }
+
+body > .mainwrapper {width: 100vw;
+height: 100vh;
+overflow-y: scroll;
+-webkit-overflow-scrolling: touch;}
