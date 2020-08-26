@@ -1,5 +1,5 @@
 body {margin: 0 auto;color: white;text-align: center;width: 100vw;
-height: 100vh;font-family: Arial;}
+  height: 100vh;font-family: Arial;position:absolute}
 .redbox {background-color: #D41E0F;display: flex;flex-direction: row;flex-wrap: wrap;height: 100vh;justify-content: center;
   align-items: center;width: 100vw;}
 .negpoints {width: 50vw;flex: 0 1 auto;}
