@@ -1,5 +1,5 @@
 body {margin: 0 auto;color: white;text-align: center;width: 100%;
-height: 100vh;font-family: Arial;}
+height: 100%;font-family: Arial;}
 a {color: white;}
 a:hover {color: rgb(217, 217, 217);}
 #en {display: flex;
@@ -10,22 +10,22 @@ flex-wrap: wrap;}
 .redbox {background-color: #d43224;display: flex;flex-direction: row;flex-wrap: wrap;justify-content: center;
   width: 100%;align-items: center;font-size: 30px;
 flex: 0 1 auto;padding: 5% 0;}
-.itenbutton {font-size: 40px;width: 100vw;
+.itenbutton {font-size: 40px;width: 100%;
 flex: 0 1 auto;
 display: block;text-align: right;margin-right: 10%;}
-.titleit {width: 100vw;
+.titleit {width: 100%;
 flex: 0 1 auto;margin: 2% auto;font-size: 60px;display: block;}
-.titleen {width: 100vw;
+.titleen {width: 100%;
 flex: 0 1 auto;
 margin: 2% auto;
 font-size: 60px;
 display: none;}
-.negpointsit {width: 50vw;flex: 0 1 auto;display: block;}
-.negpointsen {width: 50vw;
+.negpointsit {width: 50%;flex: 0 1 auto;display: block;}
+.negpointsen {width: 50%;
 flex: 0 1 auto;
 
 display: none;}
-.negimage {flex: 0 1 auto;width: 50vw;margin: 2em auto;}
+.negimage {flex: 0 1 auto;width: 50%;margin: 2em auto;}
 
 /*Graybox*/
 .grayboxleft {width: 25%;
@@ -53,16 +53,16 @@ flex-direction: row;
 flex-wrap: wrap;justify-content: center;
   align-items: center;width: 100%;font-size: 30px;
   flex: 0 1 auto; padding: 5% 0}
-.pospointsit {width: 50vw;
+.pospointsit {width: 50%;
 flex: 0 1 auto;
 
 display: block;}
-.pospointsen {width: 50vw;
+.pospointsen {width: 50%;
 flex: 0 1 auto;
 
 display: none;}
 .posimage {flex: 0 1 auto;
-width: 50vw;margin: 2em auto;}
+width: 50%;margin: 2em auto;}
 
 /*Footer*/
 footer {
@@ -72,7 +72,7 @@ flex: 0 1 auto;
 }
 
 .socialprivacy {display: flex;flex-direction: row-reverse;
-flex-wrap: wrap;height: 10vh;}
+flex-wrap: wrap;height: 10%;}
 .social {width: 25%;
 flex: 0 1 auto;}
 .privacy {width: 25%;
