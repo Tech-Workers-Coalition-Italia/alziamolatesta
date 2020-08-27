@@ -1,6 +1,5 @@
 body {margin: 0 auto;color: white;text-align: center;width: 100vw;
-height: 100vh;font-family: Arial;position: absolute;
-    }
+height: 100vh;font-family: Arial;}
 a {color: white;}
 a:hover {color: rgb(217, 217, 217);}
 #en {display: flex;
@@ -14,9 +13,9 @@ flex: 0 1 auto;padding: 5% 0;}
 .itenbutton {font-size: 40px;width: 100vw;
 flex: 0 1 auto;
 display: block;text-align: right;margin-right: 10%;}
-.titleit {width: 100vw;
+.titleit {width: 100%;
 flex: 0 1 auto;margin: 2% auto;font-size: 60px;display: block;}
-.titleen {width: 100vw;
+.titleen {width: 100%;
 flex: 0 1 auto;
 margin: 2% auto;
 font-size: 60px;
