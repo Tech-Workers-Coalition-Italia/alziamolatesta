@@ -8,7 +8,7 @@ flex-wrap: wrap;}
 
 /*Redbox*/
 .redbox {background-color: #d43224;display: flex;flex-direction: row;flex-wrap: wrap;justify-content: center;
-  width: 100vw;align-items: center;font-size: 30px;
+  width: 100%;align-items: center;font-size: 30px;
 flex: 0 1 auto;padding: 5% 0;}
 .itenbutton {font-size: 40px;width: 100vw;
 flex: 0 1 auto;
@@ -28,14 +28,14 @@ display: none;}
 .negimage {flex: 0 1 auto;width: 50vw;margin: 2em auto;}
 
 /*Graybox*/
-.grayboxleft {width: 25vw;
+.grayboxleft {width: 25%;
 display: flex;flex: 0 1 auto;background: linear-gradient(#d43224 50%, rgb(18, 138, 213) 50%);}
 .graybox {
-width: 50vw;
+width: 50%;
 display: flex;font-size: 30px;
 flex: 0 1 auto;color: rgb(110, 110, 110);background: linear-gradient(#d43224 50%, rgb(18, 138, 213) 50%);}
 .grayboxright {;
-width: 25vw;
+width: 25%;
 display: flex;
 flex: 0 1 auto;background: linear-gradient(#d43224 50%, rgb(18, 138, 213) 50%);}
 
@@ -43,7 +43,6 @@ flex: 0 1 auto;background: linear-gradient(#d43224 50%, rgb(18, 138, 213) 50%);}
 border-radius: 5px;
 padding: 2px 6px;}
 .graybox p {margin: 10 auto;}
-p {}
 .graybox p:nth-child(1) {display: block;}
 .graybox p:nth-child(2) {display: none;}
 
@@ -52,7 +51,7 @@ p {}
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;justify-content: center;
-  align-items: center;width: 100vw;font-size: 30px;
+  align-items: center;width: 100%;font-size: 30px;
   flex: 0 1 auto; padding: 5% 0}
 .pospointsit {width: 50vw;
 flex: 0 1 auto;
@@ -68,15 +67,15 @@ width: 50vw;margin: 2em auto;}
 /*Footer*/
 footer {
     position: relative;
-    bottom: 0;background-color: rgb(18, 138, 213);width: 100vw;
+    bottom: 0;background-color: rgb(18, 138, 213);width: 100%;
 flex: 0 1 auto;
 }
 
 .socialprivacy {display: flex;flex-direction: row-reverse;
 flex-wrap: wrap;height: 10vh;}
-.social {width: 25vw;
+.social {width: 25%;
 flex: 0 1 auto;}
-.privacy {width: 25vw;
+.privacy {width: 25%;
 flex: 0 1 auto;}
 
 /* Mobile */
@@ -85,9 +84,9 @@ flex: 0 1 auto;}
     .negimage {flex: 0 1 auto; width: 100%;}
     .pospoints {width: 100%;flex: 0 1 auto;}
     .posimage {flex: 0 1 auto; width: 100%;}
-    .grayboxleft {width: 10vw}
-    .graybox {width: 80vw}
-    .grayboxright {width: 10vw}
+    .grayboxleft {width: 10%}
+    .graybox {width: 80%}
+    .grayboxright {width: 10%}
     body {-webkit-overflow-scrolling: touch;
 padding: 12px env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);}
 }
