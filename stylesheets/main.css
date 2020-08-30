@@ -8,12 +8,13 @@ flex-wrap: wrap;}
 .dot {height: 20px;
   width: 20px;
   background-color: #383d44;
-  border-radius: 50%;display: inline-block;margin: 0 3% 0 0;0;}
+  border-radius: 50%;display: inline-block;margin: 0 2% 0 0;position: relative;top: 3;0;}
 
 /*Redbox*/
 .redbox {font-size: 25px; background-color: #d43224;display: flex;flex-direction: row;flex-wrap: wrap;justify-content: center;
   width: 100%;align-items: center;
 flex: 0 1 auto;padding: 5% 0;}
+.redbox h2 {font-size: 20px;text-align: left;padding: 0 2% 0 8%;font-weight: 100;%;}
 .itenbutton {font-size: 40px;width: 100%;
 flex: 0 1 auto;
 display: block;text-align: right;margin-right: 10%;}
@@ -24,12 +25,12 @@ flex: 0 1 auto;
 margin: 5% auto;
 font-size: 60px;
 display: none;}
-.negpointsit {width: 50%;flex: 0 1 auto;display: block;}
-.negpointsen {width: 50%;
+.negpointsit {width: 70%;flex: 0 1 auto;display: block;}
+.negpointsen {width: 70%;
 flex: 0 1 auto;
 
 display: none;}
-.negimage {flex: 0 1 auto;width: 50%;margin: 2em auto;}
+.negimage {flex: 0 1 auto;width: 30%;margin: 2em auto;}
 
 /*Graybox*/
 .grayboxleft {width: 25%;
@@ -57,6 +58,7 @@ flex-direction: row;
 flex-wrap: wrap;justify-content: center;
   align-items: center;width: 100%;
   flex: 0 1 auto; padding: 5% 0}
+.bluebox h2 {font-size: 20px;text-align: left;padding: 0 8% 0 2%;font-weight: 100;%;}
 .pospointsit {width: 50%;
 flex: 0 1 auto;
 
@@ -70,8 +72,10 @@ width: 50%;margin: 2em auto;}
 
 .joinmessage {width: 70%;
 background-color: #383d44;margin: 4% auto 0 auto;border-radius: 5px;}
-.joinmessage h2 {margin: 0 auto;font-weight: 100;}
-.jointextit {margin: 4%;font-size: 17px;}
+.joinmessage h2 {margin: 0 auto;font-weight: 100;
+text-align: center;}
+.jointextit {margin: 4%;
+}
 
 /*Footer*/
 footer {
@@ -96,11 +100,11 @@ margin: 0 50px 50px 0;text-align: right;}
     .grayboxleft {width: 10%}
     .graybox {width: 80%}
     .grayboxright {width: 10%}
-    .redbox {font-size: 18px}
-    .bluebox {font-size: 18px}
     .jointextit {font-size: 13px}
     .titleit {font-size: 40px}
     .titleen  {font-size: 40px}
+    .redbox h2 {padding: 0 4% 0 4%; font-size: 18px}
+    .bluebox h2 {padding: 0 4% 0 4%; font-size: 18px}
     body {-webkit-overflow-scrolling: touch;
 padding: 12px env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);}
 }
@@ -224,6 +228,7 @@ display: inline-flex;
 
 .modal-container #modal-toggle:checked ~ .modal-backdrop .modal-content { left: 0; border-radius: 0}
 }
+
 
 
 
