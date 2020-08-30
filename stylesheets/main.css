@@ -11,7 +11,7 @@ flex-wrap: wrap;}
   border-radius: 50%;display: inline-block;margin: 0 3% 0 0;0;}
 
 /*Redbox*/
-.redbox {font-size: 18px, background-color: #d43224;display: flex;flex-direction: row;flex-wrap: wrap;justify-content: center;
+.redbox {font-size: 25px, background-color: #d43224;display: flex;flex-direction: row;flex-wrap: wrap;justify-content: center;
   width: 100%;align-items: center;
 flex: 0 1 auto;padding: 5% 0;}
 .itenbutton {font-size: 40px;width: 100%;
@@ -51,7 +51,7 @@ padding: 2px 6px;}
 .graybox p:nth-child(2) {display: none;}
 
 /*Bluebox*/
-.bluebox {font-size: 18px, background-color: rgb(18, 138, 213);
+.bluebox {font-size: 25px, background-color: rgb(18, 138, 213);
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;justify-content: center;
@@ -96,6 +96,8 @@ margin: 0 20px 25px 0;text-align: right;}
     .grayboxleft {width: 10%}
     .graybox {width: 80%}
     .grayboxright {width: 10%}
+    .redbox {font-size: 18px}
+    .bluebox {font-size: 18px}
     body {-webkit-overflow-scrolling: touch;
 padding: 12px env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);}
 }
