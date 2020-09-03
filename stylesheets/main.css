@@ -70,12 +70,29 @@ display: none;}
 .posimage {flex: 0 1 auto;
 width: 50%;margin: 2em auto;}
 
-.joinmessage {width: 70%;
-background-color: #383d44;margin: 4% auto 0 auto;border-radius: 5px;}
+/*Joinbox*/
+
+.joincontainer {display: flex;
+flex-direction: row;
+flex-wrap: wrap;width: 70%;margin: 4% auto 0 auto;}
+.joinbox {border-radius: 0 0 5px 5px;background: white;color: #383d44;display: flex;
+flex-direction: row;
+flex-wrap: wrap;justify-content: center;
+align-items: center;}
+.joinpoints {flex: 0 1 auto;
+width: 80%;}
+.logo {flex: 0 1 auto;
+width: 20%;}
+.joinpoints h2 {font-size: 18px;padding: 0 0 0 2%;}
+.joinmessage {width: 100%;
+background-color: #383d44;border-radius: 5px 5px 0 0;flex: 0 1 auto;
+}
 .joinmessage h2 {margin: 0 auto;font-weight: 100;
 text-align: center;}
 .jointextit {margin: 4%;
 }
+.joinpoints .dot {height: 13px;
+width: 13px;top: 1;margin: 0 1% 0 0;}
 
 /*Footer*/
 footer {
@@ -97,6 +114,8 @@ margin: 0 50px 50px 0;text-align: right;}
 @media screen and (max-width: 800px) {
     .negpointsit,.negpointsen, .negimage, .pospointsit,.pospointsen, .posimage {width: 100%; flex: 0 1 auto;}
 
+    .joinpoints {width: 100%}
+    .logo {width: 100%}
     .grayboxleft {width: 10%}
     .graybox {width: 80%}
     .grayboxright {width: 10%}
@@ -228,6 +247,7 @@ display: inline-flex;
 
 .modal-container #modal-toggle:checked ~ .modal-backdrop .modal-content { left: 0; border-radius: 0}
 }
+
 
 
 
