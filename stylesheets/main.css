@@ -83,7 +83,7 @@ flex-wrap: wrap;justify-content: center;
 width: 80%;}
 .logo {flex: 0 1 auto;
 width: 20%;}
-.joinpoints h2 {font-size: 18px;padding: 0 0 0 2%;}
+.joinpoints h2 {padding: 0 0 0 2%;}
 .joinmessage {width: 100%;
 background-color: #383d44;border-radius: 5px 5px 0 0;flex: 0 1 auto;
 }
@@ -115,6 +115,7 @@ margin: 0 50px 50px 0;text-align: right;}
     .negpointsit,.negpointsen, .negimage, .pospointsit,.pospointsen, .posimage {width: 100%; flex: 0 1 auto;}
 
     .joinpoints {width: 100%}
+    .joinpoints h2 {font-size: 16px}
     .logo {width: 100%}
     .grayboxleft {width: 10%}
     .graybox {width: 80%}
