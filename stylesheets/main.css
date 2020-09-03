@@ -58,17 +58,17 @@ flex-direction: row;
 flex-wrap: wrap;justify-content: center;
   align-items: center;width: 100%;
   flex: 0 1 auto; padding: 5% 0}
-.bluebox h2 {font-size: 20px;text-align: left;padding: 0 8% 0 2%;font-weight: 100;%;}
-.pospointsit {width: 50%;
+.bluebox h2 {font-size: 20px;text-align: left;padding: 0 8% 0 2%;font-weight: 100;}
+.pospointsit {width: 70%;
 flex: 0 1 auto;
 
 display: block;}
-.pospointsen {width: 50%;
+.pospointsen {width: 70%;
 flex: 0 1 auto;
 
 display: none;}
 .posimage {flex: 0 1 auto;
-width: 50%;margin: 2em auto;}
+width: 30%;margin: 2em auto;}
 
 /*Joinbox*/
 
