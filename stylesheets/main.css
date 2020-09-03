@@ -204,9 +204,9 @@ display: inline-flex;
   width: 100%;
   
   
-  position: relative;
-  left: -50%;
-  
+  position: absolute;
+  left: calc(50% - 200px);
+  top: 30%;
   border-radius: 5px;
   z-index: 999;
   pointer-events: auto;
@@ -244,11 +244,11 @@ display: inline-flex;
 }
 .modal-container #modal-toggle:checked ~ .modal-backdrop .modal-content .modal-close:hover { color: #333; }
 
-.modal-container #modal-toggle:checked ~ .modal-backdrop .modal-content p {
-    padding: 3em 1em 1em 1em;
-    margin: 0 auto;
-    white-space: normal;
+@media (max-width: 400px) {
+
+.modal-container #modal-toggle:checked ~ .modal-backdrop .modal-content { left: 0; border-radius: 0}
 }
+
 
 
 
