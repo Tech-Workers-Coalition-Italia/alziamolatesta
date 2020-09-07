@@ -70,7 +70,7 @@ display: none;}
 .posimage {flex: 0 1 auto;
 width: 30%;margin: 2em auto;}
 
-.negimage img, .posimage img {height: 40%}
+.negimage img, .posimage img {height: 500px}
 
 /*Joinbox*/
 
