@@ -127,7 +127,7 @@ margin: 0 50px 50px 0;text-align: right;}
     .redbox h2 {padding: 0 4% 0 4%; font-size: 18px}
     .bluebox h2 {padding: 0 4% 0 4%; font-size: 18px}
     body {-webkit-overflow-scrolling: touch;
-padding: 12px env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);}
+      padding: 12px env(safe-area-inset-top) 12px env(safe-area-inset-right) 12px env(safe-area-inset-bottom) 12 px env(safe-area-inset-left);}
 }
 
 /*Translation IT/EN*/
