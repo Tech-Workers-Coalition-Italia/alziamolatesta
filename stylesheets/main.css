@@ -70,7 +70,7 @@ display: none;}
 .posimage {flex: 0 1 auto;
 width: 30%;margin: 2em auto;}
 
-.negimage img, .posimage img {width: 20vw}
+.negimage img, .posimage img {width: 70%}
 
 /*Joinbox*/
 .joincontainer {display: flex;
@@ -115,7 +115,7 @@ margin: 0 50px 50px 0;text-align: right;}
 @media screen and (max-width: 800px) {
     .negpointsit,.negpointsen, .negimage, .pospointsit,.pospointsen, .posimage {width: 100%; flex: 0 1 auto;}
 
-    .negimage img, .posimage img {width: 40vw}
+    .negimage img, .posimage img {width: 40%}
     .joinpoints {width: 100%}
     .joinpoints h2 {font-size: 16px}
     .logo {width: 100%}
