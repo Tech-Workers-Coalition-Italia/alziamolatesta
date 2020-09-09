@@ -111,6 +111,10 @@ margin: 0 50px 50px 0;text-align: right;}
 .privacy {white-space: nowrap;
   overflow: hidden;display: inline-flex;}
 
+.social .fab {
+padding: 3px;
+}
+
 /* Mobile */
 @media screen and (max-width: 800px) {
     .negpointsit,.negpointsen, .negimage, .pospointsit,.pospointsen, .posimage {width: 100%; flex: 0 1 auto;}
