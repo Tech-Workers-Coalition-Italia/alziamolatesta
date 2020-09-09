@@ -155,7 +155,7 @@ padding: 5px;font-size: 25px;
   
   position: relative;
   white-space: nowrap;
-  bottom:2;
+  bottom: 5;
 overflow: hidden;
 display: inline-flex;
 }
@@ -168,7 +168,7 @@ display: inline-flex;
   
   background: none;
   
-  border: 0;font-size: 15px;
+  border: 0;font-size: 22px;
   
 }
 .modal-container .modal-backdrop {
@@ -259,6 +259,7 @@ display: inline-flex;
 
 .modal-container #modal-toggle:checked ~ .modal-backdrop .modal-content { left: 0; border-radius: 0}
 }
+
 
 
 
