@@ -85,7 +85,7 @@ flex-wrap: wrap;justify-content: center;
 width: 80%;}
 .logo {flex: 0 1 auto;
 width: 20%;}
-.joinpoints h2 {padding: 0 0 0 2%;}
+.joinpointsit h2,.joinpointsen h2 {padding: 0 0 0 2%;}
 .joinmessage {width: 100%;
 background-color: #383d44;border-radius: 5px 5px 0 0;flex: 0 1 auto;
 }
@@ -95,8 +95,9 @@ text-align: center;}
 .jointexten {display:none}
 .jointextit,.jointexten {margin: 3%;
 }
-.joinpoints .dot {height: 13px;
+.joinpointsit .dot,.joinpointsen .dot {height: 13px;
 width: 13px;top: 1;margin: 0 1% 0 0;}
+.joinpointsen {display:none}
 
 /*Footer*/
 footer {
@@ -156,7 +157,7 @@ padding: 5px;font-size: 35px;
 
 /*POPUP*/
 
-.modal-content p:nth-child(2) {
+.modal-content p:nth-child(3) {
     display: none
 }
 .modal-container {
