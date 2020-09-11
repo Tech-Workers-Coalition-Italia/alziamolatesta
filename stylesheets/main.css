@@ -81,7 +81,7 @@ flex-wrap: wrap;width: 70%;}
 flex-direction: row;
 flex-wrap: wrap;justify-content: center;
   align-items: center;width: 100%; flex: 0 1 auto}
-.joinpoints {flex: 0 1 auto;
+.joinpointsit, .joinpointsen {flex: 0 1 auto;
 width: 80%;}
 .logo {flex: 0 1 auto;
 width: 20%;}
@@ -91,7 +91,9 @@ background-color: #383d44;border-radius: 5px 5px 0 0;flex: 0 1 auto;
 }
 .joinmessage h2 {margin: 0 auto;font-weight: 100;
 text-align: center;}
-.jointextit {margin: 3%;
+.jointextit {display:block}
+.jointexten {display:none}
+.jointextit,.jointexten {margin: 3%;
 }
 .joinpoints .dot {height: 13px;
 width: 13px;top: 1;margin: 0 1% 0 0;}
@@ -126,13 +128,15 @@ padding: 5px;font-size: 35px;
 
     .negimage img, .posimage img {width: 40%;
     height: auto;}
-    .joinpoints {width: 100%}
+    .joinpointsit {display:block}
+    .joinpointsen {display:none}
+    .joinpointsit,.joinpointsen {width: 100%}
     .joinpoints h2 {font-size: 16px}
     .logo {width: 100%}
     .grayboxleft {width: 10%}
     .graybox {width: 80%}
     .grayboxright {width: 10%}
-    .jointextit {font-size: 13px}
+    .jointextit, .jointexten {font-size: 13px}
     .titleit {font-size: 40px}
     .titleen  {font-size: 40px}
     .redbox h2 {padding: 0 4% 0 4%; font-size: 18px}
@@ -143,15 +147,18 @@ padding: 5px;font-size: 35px;
 
 /*Translation IT/EN*/
 
-#it:target .negpointsit,#it:target .pospointsit,#it:target .graybox p:nth-child(1),#it:target .titleit {display: block;}
-#it:target .negpointsen,#it:target .pospointsen,#it:target .graybox p:nth-child(2),#it:target .titleen {display: none;}
+#it:target .negpointsit,#it:target .pospointsit,#it:target .graybox p:nth-child(1),#it:target .titleit,#it:target .jointextit,#it:target .joinpointsit,#it:target .modal-content p:nth-child(1) {display: block;}
+#it:target .negpointsen,#it:target .pospointsen,#it:target .graybox p:nth-child(2),#it:target .titleen,#it:target .jointexten,#it:target .joinpointsen,#it:target .modal-content p:nth-child(2) {display: none;}
 #en:target .negpointsit,#en:target .pospointsit,
-#en:target .graybox p:nth-child(1),#en:target .titleit {display: none;}
-#en:target .negpointsen,#en:target .pospointsen,#en:target .graybox p:nth-child(2),#en:target .titleen {display: block;}
+#en:target .graybox p:nth-child(1),#en:target .titleit,#en:target .jointextit,#en:target .joinpointsit,#en:target .modal-content p:nth-child(1) {display: none;}
+#en:target .negpointsen,#en:target .pospointsen,#en:target .graybox p:nth-child(2),#en:target .titleen,#en:target .jointexten,#en:target .joinpointsen,#en:target .modal-content p:nth-child(2) {display: block;}
 
 
 /*POPUP*/
 
+.modal-content p:nth-child(2) {
+    display: none
+}
 .modal-container {
   margin: 0 auto;
   
@@ -261,6 +268,7 @@ display: inline-flex;
 
 .modal-container #modal-toggle:checked ~ .modal-backdrop .modal-content { left: 0; border-radius: 0}
 }
+
 
 
 
