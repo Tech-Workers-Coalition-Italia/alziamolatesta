@@ -147,11 +147,11 @@ padding: 5px;font-size: 35px;
 
 /*Translation IT/EN*/
 
-#it:target .negpointsit,#it:target .pospointsit,#it:target .graybox p:nth-child(1),#it:target .titleit,#it:target .jointextit,#it:target .joinpointsit,#it:target .modal-content p:nth-child(1) {display: block;}
-#it:target .negpointsen,#it:target .pospointsen,#it:target .graybox p:nth-child(2),#it:target .titleen,#it:target .jointexten,#it:target .joinpointsen,#it:target .modal-content p:nth-child(2) {display: none;}
+#it:target .negpointsit,#it:target .pospointsit,#it:target .graybox p:nth-child(1),#it:target .titleit,#it:target .jointextit,#it:target .joinpointsit,#it:target .modal-content p:nth-child(2) {display: block;}
+#it:target .negpointsen,#it:target .pospointsen,#it:target .graybox p:nth-child(2),#it:target .titleen,#it:target .jointexten,#it:target .joinpointsen,#it:target .modal-content p:nth-child(3) {display: none;}
 #en:target .negpointsit,#en:target .pospointsit,
-#en:target .graybox p:nth-child(1),#en:target .titleit,#en:target .jointextit,#en:target .joinpointsit,#en:target .modal-content p:nth-child(1) {display: none;}
-#en:target .negpointsen,#en:target .pospointsen,#en:target .graybox p:nth-child(2),#en:target .titleen,#en:target .jointexten,#en:target .joinpointsen,#en:target .modal-content p:nth-child(2) {display: block;}
+#en:target .graybox p:nth-child(1),#en:target .titleit,#en:target .jointextit,#en:target .joinpointsit,#en:target .modal-content p:nth-child(2) {display: none;}
+#en:target .negpointsen,#en:target .pospointsen,#en:target .graybox p:nth-child(2),#en:target .titleen,#en:target .jointexten,#en:target .joinpointsen,#en:target .modal-content p:nth-child(3) {display: block;}
 
 
 /*POPUP*/
