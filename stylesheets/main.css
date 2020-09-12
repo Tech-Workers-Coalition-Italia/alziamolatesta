@@ -110,10 +110,17 @@ flex-wrap: wrap;
 }
 
 .socialprivacy {
-margin: 0 50px 50px 0;text-align: right;
+margin: 0 50px 50px 0;display: flex;flex-direction: row;
+flex-wrap: wrap;width: auto;
+flex: 0 1 auto;justify-content: center;
+
+align-items: center;
+
 
 }
-.social {display: inline-flex;
+.social {flex-direction: row-reverse;
+width: auto;
+flex: 0 1 auto;text-align: right;flex-wrap: nowrap;
 
 }
 .privacy {white-space: nowrap;
@@ -127,6 +134,7 @@ padding: 5px;font-size: 35px;
 @media screen and (max-width: 700px) {
     .negpointsit,.negpointsen, .negimage, .pospointsit,.pospointsen, .posimage {width: 100%; flex: 0 1 auto;}
 
+    .socialprivacy {margin: 0 auto 50px auto}
     .negimage img, .posimage img {width: 40%;
     height: auto;}
     .joinpointsit {display:block}
@@ -161,17 +169,18 @@ padding: 5px;font-size: 35px;
     display: none
 }
 .modal-container {
-  margin: 0 auto;
   
-  position: relative;
+  
+  
   white-space: nowrap;
-  bottom: 5;
+  
 overflow: hidden;
-display: inline-flex;
+width: auto;
+flex: 0 1 auto;
 }
 .modal-container button {
   display: block;
-  margin: 0 auto;
+  
   color: #fff;
   
   
@@ -269,6 +278,7 @@ display: inline-flex;
 
 .modal-container #modal-toggle:checked ~ .modal-backdrop .modal-content { left: 0; border-radius: 0}
 }
+
 
 
 
