@@ -103,17 +103,17 @@ h3 {
 }
 
 /*Redbox*/
-.redbox {font-size: 25px; background-color: #d43224;
+.redbox {background-color: #d43224;
   width: 50%;
   flex: 0 1 auto; padding: 5% 0}
 .redcontainer {display: flex;flex-direction: row;flex-wrap: wrap;justify-content: center}
 .negpoints {width: 60%;flex: 0 1 auto}
 .negpoints h2, .negpoints h3 {padding-left: 5%}
 .negimage {flex: 0 1 auto; width: 40%;}
-.negimage .image {width: 90%; height: 60%; background-image: url("/images/g1012.svg");background-size: contain; background-repeat: no-repeat; background-position: center;}
+.negimage .image {width: 90%; height: 60%; background-image: url("../images/g1012.svg");background-size: contain; background-repeat: no-repeat; background-position: center;}
 
 /*Bluebox*/
-.bluebox {font-size: 25px; background-color: rgb(18, 138, 213);
+.bluebox {background-color: rgb(18, 138, 213);
   justify-content: center;
   align-items: center;width: 50%;
   flex: 0 1 auto; padding: 5% 0}
@@ -124,7 +124,7 @@ h3 {
 .posimage {flex: 0 1 auto;
   width: 40%}
 
-.posimage .image {width: 90%; height: 60%; background-image: url("/images/g16.svg");background-size: contain;background-repeat: no-repeat; background-position: center}
+.posimage .image {width: 90%; height: 60%; background-image: url("../images/g16.svg");background-size: contain;background-repeat: no-repeat; background-position: center}
 
 /*Joinbox*/
 .joincontainer {display: flex;
