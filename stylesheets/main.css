@@ -40,6 +40,15 @@ h3 {
   flex-flow: column;
   height: 100%;}
 
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 0 1 auto;
+  width: auto;
+  margin: 76px 0 0 0;
+  height: fit-content;}
+
 .title {width: 100%; flex: 0 1 auto; position: relative; top:6em}
 
 /*Header*/
@@ -112,6 +121,7 @@ h3 {
 
 /*Redbox*/
 .redbox {
+  padding-top: 3%;
   width: 50%;
   flex: 0 1 auto;
   justify-content: center;
@@ -124,6 +134,7 @@ h3 {
 
 /*Bluebox*/
 .bluebox {
+  padding-top: 3%;
   justify-content: center;
   align-items: center;width: 50%;
   flex: 0 1 auto; background: rgb(18, 138, 213)}
@@ -336,11 +347,3 @@ footer a {
 
   .modal-container #modal-toggle:checked ~ .modal-backdrop .modal-content { left: 0; border-radius: 0}
 }
-.content {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  flex: 0 1 auto;
-  width: auto;
-  margin: 100px 0 0 0;
-  height: fit-content;}
