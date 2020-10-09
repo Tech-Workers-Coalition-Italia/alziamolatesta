@@ -196,7 +196,7 @@ h3 {
 .joinpoints .dot {height: 13px;
   width: 13px;top: 1;margin: 0 1% 0 0;background-color: #383d44;
   border-radius: 50%;display: inline-block;position: relative}
-.joinpoints h3 {margin: 0.4em 0; padding-left:2%; color: #383d44;}
+.joinpoints h3,.joinpoints h2 {margin: 0.4em 0; padding-left:2%; color: #383d44;}
 
 /*Privacy Policy*/
 .privacy {
@@ -473,4 +473,8 @@ background-position: 50%;
 @media (max-width: 400px) {
 
   .modal-container #modal-toggle:checked ~ .modal-backdrop .modal-content { left: 0; border-radius: 0}
+}
+
+.joinpoints > h2:nth-child(1) > div:nth-child(1){
+ color: black
 }
