@@ -1,4 +1,4 @@
-body {margin: 0 auto;color: white;text-align: center;width: 100%; font-family: Rubik,Arial,sans-serif;word-wrap: break-word;display: flex}
+body {margin: 0 auto;color: white;text-align: center;width: 100%; font-family: Rubik,Arial,sans-serif;word-wrap: break-word}
 a {color: white; text-decoration: none}
 a:hover {color: rgb(217, 217, 217);}
 
@@ -170,7 +170,7 @@ h3 {
   flex: 0 1 auto; background: rgb(18, 138, 213); padding-bottom: 2%}
 .bluecontainer {display: flex;flex-direction: row;flex-wrap: wrap;justify-content: center; flex: 0 1 auto}
 .pospoints {width: 70%;
-  flex: 0 1 auto; color: lightgray}
+  flex: 0 1 auto; color: #fff}
 .pospoints h2, .pospoints h3 {padding-right: 5%}
 .posimage {flex: 0 1 auto;
   width: 30%}
@@ -193,8 +193,8 @@ h3 {
 }
 .joinmessage h2 {text-align: center; margin: 3%}
 
-.joinpoints .dot {height: 13px;
-  width: 13px;top: 1;margin: 0 1% 0 0;background-color: #383d44;
+.joinpoints .dot {height: 8px;
+  width: 8px;top: 1;margin: 0 1% 0 0;background-color: #383d44;
   border-radius: 50%;display: inline-block;position: relative}
 .joinpoints h3 {margin: 0.4em 0; padding-left:2%; color: #383d44;}
 
@@ -250,6 +250,25 @@ footer a {
   text-decoration: none;
 }
 
+@media screen and (max-width: 420px) {
+  footer .columns {
+    display:block
+  }
+}
+
+@media screen and (max-width: 420px) {
+  footer {
+    position: relative;
+    box-shadow: none;
+    border-top:1px #212121 solid
+  }
+
+  footer ul {
+    padding-left:1em
+  }
+}
+
+
 /* Schermi medi */
 @media screen and (max-width: 1180px) {
 
@@ -298,12 +317,27 @@ footer a {
 .mobileposimage {
   display: none;
 }
-.mobilepoints {
+.mobilepospoints {
+  display: none
+}
+.mobilenegpoints {
   display: none
 }
 
+#pos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#neg {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 @media screen and (max-width: 700px) {
-  
+
   h2 {
     font-size: 4vw;
   }
@@ -314,6 +348,7 @@ footer a {
 
   .redbox,.bluebox,.joinbox,.title {
     display: none;
+    transition: 2s;
   }
 
   .mobilenegimage {
@@ -322,57 +357,178 @@ footer a {
     height: 30%;
     flex: 0 1 auto;
     flex-direction: row;
-  flex-wrap: wrap;
-    padding-top: 2%
+    flex-wrap: wrap;
+    margin-top: 4%;
+    transition: 2s;
   }
-  
-  .mobilenegimage .image{
+
+  .mobilenegimage .image, #neg:target .mobilenegimage .image{
     width: 100%;
-height: 100%;
-background-image: url("http://127.0.0.1:53563/images/g1012.svg");
-background-size: contain;
-background-repeat: no-repeat;
-background-position: 50%;
+    height: 100%;
+    background-image: url("../images/g1012.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    flex: 0 1 auto;
   }
   
-  .mobileposimage {
-    padding-top: 2%;
+  #pos:target .mobilenegimage .image{
+    background-image: url("../images/g16.svg");
+  }
+  
+  .mobileposimage, #neg:target .mobileposimage {
+    margin: 4% 1% 0 1%;
+    padding-bottom: 3%;
     display: flex;
-    width: 50%;
+    width: 48%;
     height: 30%;
     flex: 0 1 auto;
     flex-direction: row;
-  flex-wrap: wrap;
+    flex-wrap: wrap;
+    background: rgb(18, 138, 213);
+    border-radius: 10px;
+    transition: 2s;
   }
   
-  .mobileposimage .image{
-    width: 100%;
-height: 100%;
-background-image: url("http://127.0.0.1:53563/images/g1012.svg");
-background-size: contain;
-background-repeat: no-repeat;
-background-position: 50%;
+  #pos:target .mobileposimage {
+    background: #d43224;
+    transition: 2s;
   }
   
-  
-  .mobilepoints {
+  .mobileposimage .buttonpos, #neg:target .mobileposimage .buttonpos {
+    height: auto;
+    flex: 0 1 auto;
+    border-radius: 5px;
+    margin: 0 auto;
     display: flex;
+    transition: 2s;
+  }
+  
+  #pos:target .mobileposimage .buttonpos {
+    display: none;
+    transition: 2s;
+  }
+  
+  .mobileposimage .buttonneg, #neg:target .mobileposimage .buttonneg {
+    height: auto;
+    flex: 0 1 auto;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: none;
+    transition: 2s;
+  }
+  
+  #pos:target .mobileposimage .buttonneg {
+    display: flex;
+    transition: 2s;
+  }
+  
+  .mobileposimage .buttonpos h2 {
+    color: white;
+    font-size: 100%;
+    padding: 4px;
+    background: rgb(11, 98, 152);
+    border-radius: 5px;
+    transition: 2s;
+  }
+  
+  .mobileposimage .buttonneg h2 {
+    color: white;
+    font-size: 100%;
+    padding: 4px;
+    background: #8e1b11;
+    border-radius: 5px;
+    transition: 2s;
+  }
+
+  .mobileposimage .image, #neg:target .mobileposimage .image {
     width: 100%;
+    height: 90%;
+    background-image: url("../images/g16.svg");
+    background-size: 100% 90%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+  
+  #pos:target .mobileposimage .image {
+    background-image: url("../images/g1012.svg");
+  }
+  
+  #pos:target .container {
+    background: rgb(18, 138, 213);
+    transition: 2s;
+  }
+  
+  #neg:target .container {
+    background: #d43224;
+    transition: 2s;
+  }
+  
+  .mobilenegpoints, #neg:target .mobilenegpoints {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
     flex: 0 1 auto;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-bottom: 10%
+    padding: 2% 0 20% 0;
+    display: flex;
+    transition: 2s;
+  }
+  
+  #pos:target .mobilenegpoints {
+    display: none;
+    transition: 2s;
+  }
+  
+  #pos:target .mobilepospoints {
+    padding-bottom: 4%;
+    transition: 2s;
+  }
+  
+  .mobilepospoints, #neg:target .mobilepospoints {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2% 0 20% 0;
+    display: none;
+    transition: 2s;
+  }
+  
+  #pos:target .mobilepospoints {
+    display: flex;
+    transition: 2s;
   }
 
+  #pos:target .joinbox {
+    display: flex;
+    padding-bottom: 20%;
+    transition: 2s;
+  }
+  
   body {-webkit-overflow-scrolling: touch;
     padding: 12px env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);}
+}
+
+@media screen and (max-width: 420px) {
+  .mobilepospoints, .mobilenegpoints, .joinbox {
+    padding-bottom: 4% !important;
+  }
+  
+  .mobilenegpoints {
+    padding-bottom: 4% !important;
+  }
 }
 
 
 /*POPUP*/
 
-.modal-container p {
-  font-size: 20px
+.modal-container h2 {
+  padding-top: 10%;
+  text-align: center;
 }
 .modal-container {
   position: relative;
@@ -385,7 +541,7 @@ background-position: 50%;
   display: block;
   color: #383d44;
   background: none;
-  border: 0;font-size: 11px;
+  border: 0;font-weight: 600;
 
 }
 .modal-container .modal-backdrop {
@@ -428,10 +584,10 @@ background-position: 50%;
 }
 .modal-container #modal-toggle:checked ~ .modal-backdrop .modal-content {
   background-color: #fff;
-  max-width: 400px;
+  max-width: 500px;
   width: 100%;
   position: absolute;
-  left: calc(50% - 200px);
+  left: calc(50% - 250px);
   top: 30%;
   border-radius: 5px;
   z-index: 999;
@@ -470,7 +626,7 @@ background-position: 50%;
 }
 .modal-container #modal-toggle:checked ~ .modal-backdrop .modal-content .modal-close:hover { color: #333; }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
 
   .modal-container #modal-toggle:checked ~ .modal-backdrop .modal-content { left: 0; border-radius: 0}
 }
