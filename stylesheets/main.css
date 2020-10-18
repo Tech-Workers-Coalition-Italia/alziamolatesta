@@ -1,4 +1,9 @@
-body {margin: 0 auto;color: white;text-align: center;width: 100%; font-family: Rubik,Arial,sans-serif;word-wrap: break-word}
+@font-face {
+  font-family:"Rubik";
+  src: url("https://twc-italia.org/assets/fonts/rubik/Rubik-Regular.ttf") format("truetype");
+}
+
+body {margin: 0 auto;color: white;text-align: center;width: 100%; font-family: Rubik,Arial,sans-serif;word-wrap: break-word; font-style: normal;}
 a {color: white; text-decoration: none}
 a:hover {color: rgb(217, 217, 217);}
 
@@ -39,6 +44,8 @@ h3 {
   background-color: none;
   background-image: url("../images/TWC.svg");
   background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   float: left;
   font-size: 1.75em;
   line-height: 1em;
@@ -89,10 +96,10 @@ h3 {
 }
 
 @media screen and (max-width: 420px) {
-  .header .logo {
+  /*.header .logo {
     background-size: cover;
     margin-left:0.25em
-  }
+  }*/
 }
 
 @media screen and (max-width: 420px) {
@@ -321,24 +328,11 @@ footer a {
   display: none
 }
 
-#pos {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-#neg {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
 @media screen and (max-width: 700px) {
 
-  .container h3 {
-    margin-bottom: 1em;
-  }
-  
+  body {-webkit-overflow-scrolling: touch;
+    padding: 14px env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);}
+
   h2 {
     font-size: 4vw;
   }
@@ -347,9 +341,22 @@ footer a {
     font-size: 3vw;
   }
 
+  .container h3 {
+    margin-bottom: 1em;
+  }
+
+  #pos:target .container {
+    background: rgb(15, 120, 186);
+    transition: 2s;
+  }
+
+  #neg:target .container {
+    background: #c32b1e;
+    transition: 2s;
+  }
+
   .redbox,.bluebox,.joinbox,.title {
     display: none;
-    transition: 2s;
   }
 
   .mobilenegimage {
@@ -364,7 +371,7 @@ footer a {
 
   .mobilenegimage .image, #neg:target .mobilenegimage .image{
     width: 100%;
-    height: 40%;
+    padding-top: 100%;
     background-image: url("../images/g1012.svg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -386,12 +393,23 @@ footer a {
     flex-wrap: wrap;
     background: rgb(15, 120, 186);
     border-radius: 10px;
-    transition: 2s;
   }
 
   #pos:target .mobileposimage {
     background: #c32b1e;
-    transition: 2s;
+  }
+
+  .mobileposimage .image, #neg:target .mobileposimage .image {
+    width: 100%;
+    padding-top: 100%;
+    background-image: url("../images/g16.svg");
+    background-size: 100% 90%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+
+  #pos:target .mobileposimage .image {
+    background-image: url("../images/g1012.svg");
   }
 
   .mobileposimage .buttonpos, #neg:target .mobileposimage .buttonpos {
@@ -400,12 +418,10 @@ footer a {
     border-radius: 5px;
     margin: 0 auto;
     display: flex;
-    transition: 2s;
   }
 
   #pos:target .mobileposimage .buttonpos {
     display: none;
-    transition: 2s;
   }
 
   .mobileposimage .buttonneg, #neg:target .mobileposimage .buttonneg {
@@ -414,12 +430,10 @@ footer a {
     border-radius: 5px;
     margin: 0 auto;
     display: none;
-    transition: 2s;
   }
 
   #pos:target .mobileposimage .buttonneg {
     display: flex;
-    transition: 2s;
   }
 
   .mobileposimage .buttonpos h2 {
@@ -450,29 +464,6 @@ footer a {
     border: 1px solid #98251b;
   }
 
-  .mobileposimage .image, #neg:target .mobileposimage .image {
-    width: 100%;
-    height: 30%;
-    background-image: url("../images/g16.svg");
-    background-size: 100% 90%;
-    background-repeat: no-repeat;
-    background-position: 50%;
-  }
-
-  #pos:target .mobileposimage .image {
-    background-image: url("../images/g1012.svg");
-  }
-
-  #pos:target .container {
-    background: rgb(15, 120, 186);
-    transition: 2s;
-  }
-
-  #neg:target .container {
-    background: #c32b1e;
-    transition: 2s;
-  }
-
   .mobilenegpoints, #neg:target .mobilenegpoints {
     display: flex;
     width: 90%;
@@ -481,7 +472,6 @@ footer a {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 2% 0 20% 0;
-    display: flex;
     transition: 2s;
   }
 
@@ -491,12 +481,12 @@ footer a {
   }
 
   #pos:target .mobilepospoints {
+    display: flex;
     padding-bottom: 4%;
     transition: 2s;
   }
 
   .mobilepospoints, #neg:target .mobilepospoints {
-    display: flex;
     width: 90%;
     margin: 0 auto;
     flex: 0 1 auto;
@@ -507,19 +497,12 @@ footer a {
     transition: 2s;
   }
 
-  #pos:target .mobilepospoints {
-    display: flex;
-    transition: 2s;
-  }
-
   #pos:target .joinbox {
     display: flex;
     padding-bottom: 20%;
     transition: 2s;
   }
 
-  body {-webkit-overflow-scrolling: touch;
-    padding: 12px env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);}
 }
 
 @media screen and (max-width: 420px) {
@@ -537,10 +520,13 @@ footer a {
 
 .modal-container h3 {
   text-align: center;
+  font-weight: 600;
+  margin: 0.4em 0;
 }
 
 .modal-container h2 {
   padding-top: 10%;
+  padding-bottom: 5%;
   text-align: center;
 }
 
@@ -555,7 +541,7 @@ footer a {
   display: block;
   color: #383d44;
   background: none;
-  border: 0;font-weight: 600;
+  border: 0;
 
 }
 .modal-container .modal-backdrop {
