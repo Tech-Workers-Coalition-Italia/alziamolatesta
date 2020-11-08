@@ -202,7 +202,7 @@ h4 {
 .joinmessage {width: 100%;
   background-color: #383d44; flex: 0 1 auto; border-radius: 5px 5px 0 0;
 }
-.joinmessage h1 {text-align: center; margin: 3%}
+.joinmessage h1 {text-align: center; margin: 2%; line-height: 1.5}
 
 .joinpoints .dot {height: 8px;
   width: 8px;top: -3;margin: 0 1% 0 0;background-color: #383d44;
