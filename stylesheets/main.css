@@ -202,7 +202,7 @@ h4 {
 .joinmessage {width: 100%;
   background-color: #383d44; flex: 0 1 auto; border-radius: 5px 5px 0 0;
 }
-.joinmessage h2 {text-align: center; margin: 3%}
+.joinmessage h1 {text-align: center; margin: 3%}
 
 .joinpoints .dot {height: 8px;
   width: 8px;top: 0;margin: 0 1% 0 0;background-color: #383d44;
@@ -329,6 +329,10 @@ footer a {
 /* Schermi medi */
 @media screen and (max-width: 1180px) {
 
+  h1 {
+    font-size: 2.5vw;
+  }
+
   h2 {
     font-size: 2vw;
   }
@@ -397,6 +401,10 @@ footer a {
     padding-left: 14px env(safe-area-inset-left)
     padding-right: 14px env(safe-area-inset-right)
     padding-bottom: 14px env(safe-area-inset-bottom)
+  }
+
+  h1 {
+    font-size: 4.5vw;
   }
 
   h2 {
